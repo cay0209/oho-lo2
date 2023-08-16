@@ -3,6 +3,7 @@ import {BrowserRouter,Routes, Route} from "react-router-dom"
 import MemberCreate from './components/members/MemberCreate';
 import EmptyPage from './components/etc/EmptyPage';
 import Main from './components/etc/Main';
+import MemberDelete from './components/members/MemberDelete';
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
     
        <Route path='/' element={<Main/>}/>
         <Route path= "/members/create" element={<MemberCreate/>} />
-        
+        <Route path= "/members/delete" element={<MemberDelete/>} />
+
         {/* /* : 선언된 것 외의 주소가 입력되는 */}
         <Route path= "/*" element={<EmptyPage/>} /> 
 

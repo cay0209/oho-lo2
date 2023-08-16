@@ -101,11 +101,6 @@ useEffect(()=>{usernameRef.current.focus()}, [])
 
     </div>
 
-
-
-
-
-
   )
   
 }
