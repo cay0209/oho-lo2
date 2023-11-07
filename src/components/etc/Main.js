@@ -1,26 +1,32 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
 
 function Main() {
 
-    
+  //이전 로그인정보 초기화 
+  // localStorage.setItem("BTOKEN", null);
+
 
 
 
   return (
-    <div>
-        <h2>메인 페이지</h2>
 
-        <Link to = {"/members/create"}>회원가입하기</Link>
-        <Link to = {"/members/delete"}>회원탈퇴하기</Link>
+   
+        <div className="text-center">
 
+          <img
+            className="d-block"
+            style={{ width: '1920px', height: '900px', objectFit: 'cover' }}
+            src="assets/main_image.png"
+            alt="First slide"
+          />
+   
+        </div>
+ 
 
-        
-
-
-
-    </div>
   )
+
+
 }
 
 export default Main
